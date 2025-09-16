@@ -1,6 +1,7 @@
 // src/components/Navbar.jsx
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // for hamburger menu icons
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ function NavBar() {
       {/* Navigation Bar */}
       <nav className="container mx-auto flex justify-between justify-items-center">
         {/* Logo */}
-        <div className="flex justify-between items-center py-5 px-10 w-full">
+        <div className="flex justify-between items-center md:py-5 md:px-24 w-full">
           <div>
             <a href="/">
               <img
@@ -25,16 +26,16 @@ function NavBar() {
           <div className="hidden md:block">
             <ul className="navbar-menu flex space-x-8 text-primary">
               <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <a href="#home">HOME</a>
+                <Link to="/">HOME</Link>
               </li>
               <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <a href="#products">PRODUCTS</a>
+                <Link to="/products">PRODUCTS</Link>
               </li>
               <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <a href="#ourstory">OUR STORY</a>
+                <Link to="/ourstory">OUR STORY</Link>
               </li>
               <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <a href="#contact">CONTACT</a>
+                <Link to="/contact">CONTACT</Link>
               </li>
             </ul>
           </div>

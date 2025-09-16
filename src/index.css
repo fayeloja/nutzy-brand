@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 :root {
   font-synthesis: none;
@@ -34,6 +36,14 @@
     font-size: 72px;
     line-height: 1.1;
     font-weight: bolder;
+  }
+  li:hover {
+    color: var(--color-accent-red);
+    cursor: pointer;
+  }
+  li:focus {
+    color: var(--color-accent-red);
+    outline: none;
   }
 }
 
