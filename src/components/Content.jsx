@@ -4,7 +4,7 @@ function Content() {
   return (
     <>
       <div
-        className="container text-center mx-auto px-30 justify-center"
+        className="container text-center mx-auto px-24 justify-center"
         id="content"
       >
         <div className="mb-40 mt-20">

@@ -44,9 +44,7 @@ function RecipesCarousel() {
                     loading="lazy"
                   />
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold uppercase">
-                      {recipe.title}
-                    </h3>
+                    <h3 className="font-semibold uppercase">{recipe.title}</h3>
                     <p className="text-sm text-accent-red">{recipe.date}</p>
                   </div>
                 </div>

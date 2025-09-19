@@ -7,9 +7,9 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="shadow-md fixed w-full z-50 bg-white/10 backdrop-blur-md">
+    <div className="shadow-md fixed w-full z-50 bg-white/10 backdrop-blur-md">
       {/* Navigation Bar */}
-      <nav className="container mx-auto flex justify-between justify-items-center">
+      <nav className=" mx-auto flex justify-between justify-items-center">
         {/* Logo */}
         <div className="flex justify-between items-center md:py-5 md:px-24 w-full">
           <div>
@@ -87,7 +87,7 @@ function NavBar() {
           </ul>
         </div>
       )}
-    </header>
+    </div>
   );
 }
 

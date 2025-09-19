@@ -1,12 +1,13 @@
 import React from "react";
-import Hero from "../components/Hero";
+import ProductHero from "../components/ProductHero";
+import ProductContent from "../components/ProductContent";
 
 function Products() {
   return (
     <>
-      <Hero />
+      <ProductHero />
       <div className="container mx-auto px-20">
-        <h1>Products</h1>
+        <ProductContent />
       </div>
     </>
   );
