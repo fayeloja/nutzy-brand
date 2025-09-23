@@ -1,6 +1,7 @@
 import React from "react";
 import ProductHero from "../components/ProductHero";
 import ProductContent from "../components/ProductContent";
+import { Link } from "react-router-dom";
 
 function Products() {
   return (

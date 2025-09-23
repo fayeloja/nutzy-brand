@@ -17,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        {/* Dynamic product route */}
+
         <Route path="/ourstory" element={<Ourstory />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/recipes/:slug" element={<RecipeDetail />} />
