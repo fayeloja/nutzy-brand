@@ -1,7 +1,7 @@
 function ProductHero() {
   return (
     <section
-      id="home"
+      id="ProductHero"
       className="relative bg-fixed bg-center h-screen flex items-center lazyload mb-20"
       style={{
         backgroundImage: "url('./product-hero-bg.png')", // replace with your Nutzy image path
@@ -16,6 +16,9 @@ function ProductHero() {
         muted
         playsInline
       />
+
+      {/* Background Overlay */}
+      <div className="absolute top-0 left-0 w-full h-full bg-orange-400 opacity-50"></div>
 
       {/* Hero Content */}
       <div className="items-center justify-center text-center pt-50 h-screen w-full relative z-10">

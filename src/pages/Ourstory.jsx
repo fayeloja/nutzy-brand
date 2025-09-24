@@ -1,13 +1,14 @@
 import React from "react";
-import Hero from "../components/Hero";
+import OurStoryHero from "../components/OurStoryHero";
+import OurStoryContent from "../components/OurStoryContent";
+import JoinUs from "../components/JoinUs";
 
 function Ourstory() {
   return (
     <>
-      <Hero />
-      <div>
-        <h1>Our Story</h1>
-      </div>
+      <OurStoryHero />
+      <OurStoryContent />
+      <JoinUs />
     </>
   );
 }
