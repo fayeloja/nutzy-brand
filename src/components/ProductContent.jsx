@@ -108,7 +108,7 @@ function ProductContent() {
           </p>
           <a
             href="#order"
-            className="button-hero-cta mb-5 bg-accent-red shadow-2xl"
+            className="button-hero-cta mb-5 bg-accent-red shadow-2xl hover:border-2 hover:border-white transition duration-300 ease-in-out hover:bg-red-700"
           >
             GRAB YOURS TODAY
           </a>

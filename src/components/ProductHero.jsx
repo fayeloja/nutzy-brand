@@ -18,7 +18,7 @@ function ProductHero() {
       />
 
       {/* Background Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-orange-400 opacity-50"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
       {/* Hero Content */}
       <div className="items-center justify-center text-center pt-50 h-screen w-full relative z-10">
