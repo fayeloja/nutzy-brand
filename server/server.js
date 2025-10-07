@@ -133,7 +133,7 @@ app.post(
           process.env.SMTP_FROM || process.env.SMTP_USER
         }>`,
         to: process.env.CONTACT_EMAIL || "info@nutzy.ng",
-        subject: `📬 Website Contact from ${name}`,
+        subject: `📬 Web Message from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
         html: `
           <p><strong>Name:</strong> ${name}</p>
