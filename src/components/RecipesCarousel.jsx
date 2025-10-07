@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import recipes from "../data/recipe";
+import recipes from "../data/recipes";
 import { Link } from "react-router-dom";
 
 function RecipesCarousel() {
@@ -35,20 +35,22 @@ function RecipesCarousel() {
         <Slider {...settings}>
           {recipes.map((recipe) => (
             <div key={recipe.id} className="px-2">
-              <Link to={recipe.link}>
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden lazyloading">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden lazyloading">
+                <Link to={`/recipes/${recipe.slug}`}>
                   <img
                     src={recipe.image}
                     alt={recipe.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="p-4">
-                    <h3 className="font-semibold uppercase">{recipe.title}</h3>
-                    <p className="text-sm text-accent-red">{recipe.date}</p>
-                  </div>
-                </div>
-              </Link>
+                  <h3 className="font-stretch-extra-expandedbold uppercase p-4">
+                    {recipe.title}
+                  </h3>
+                  <p className="text-sm text-accent-red px-4 pb-4">
+                    {recipe.date}
+                  </p>
+                </Link>
+              </div>
             </div>
           ))}
         </Slider>

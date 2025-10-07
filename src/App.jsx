@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import ReviewsCarousel from "./components/ReviewsCarousel";
 import ScrollToTop from "./components/ScrollToTop";
 import ProductDetails from "./pages/ProductDetails";
+import RecipeDetails from "./pages/RecipeDetails";
+import Recipes from "./pages/Recipes";
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
 
         <Route path="/ourstory" element={<OurStory />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/recipes/:slug" element={<RecipeDetail />} />
+        {/* Recipes routes */}
+        <Route path="/recipes" element={<Recipes />} />
+        <Route path="/recipes/:slug" element={<RecipeDetails />} />
       </Routes>
       <ReviewsCarousel />
       <Footer />
