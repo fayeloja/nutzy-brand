@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-fixed bg-center h-screen flex items-center lazyload mb-20"
+      className="relative bg-fixed bg-center h-screen flex items-center mb-20"
       style={{
         backgroundImage: "url('./bg-img.png')", // replace with your Nutzy image path
       }}
