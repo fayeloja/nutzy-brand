@@ -10,10 +10,10 @@ function Recipes() {
         className="w-full md:h-[80vh] bg-cover bg-center flex flex-col items-center justify-center text-white text-center"
         style={{ backgroundImage: "url('/recipe-hero-banner.jpg')" }} // replace with a Nutzy banner
       >
-        <h1 className="text-5xl md:text-6xl font-bold drop-shadow-lg">
-          Nutzy Recipes
+        <h1 className="text-5xl md:text-7xl font-bold drop-shadow-lg">
+          NUTZY RECIPES
         </h1>
-        <p className="text-xl md:text-2xl mt-4 font-medium">
+        <p className="text-xl md:text-2xl mt-4 font-medium text-accent-red">
           Delicious. Nutritious. Made with love ❤️
         </p>
       </section>
