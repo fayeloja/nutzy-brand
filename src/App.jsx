@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Products from "./pages/Products";
-import Ourstory from "./pages/OurStory";
+import OurStory from "./pages/OurStory";
 import Contact from "./pages/Contact";
 import { lazy, Suspense } from "react";
 const ReviewsCarousel = lazy(() => import("./components/ReviewsCarousel"));
