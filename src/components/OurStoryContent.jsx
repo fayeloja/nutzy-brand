@@ -1,4 +1,5 @@
 import React from "react";
+import SlantedPeanutPuffs from "../assets/product-photos/peanut-puff-slanted.png";
 
 function OurStoryContent() {
   return (
@@ -11,7 +12,7 @@ function OurStoryContent() {
           <div className="justify-center items-center">
             <img
               className="lazyload w-full max-h-max"
-              src="./src/assets/product-photos/peanut-puff-slanted.png"
+              src={SlantedPeanutPuffs}
               alt="Nutzy Peanut Puff"
             />
           </div>
