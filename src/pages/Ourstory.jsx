@@ -3,7 +3,7 @@ import OurStoryHero from "../components/OurStoryHero";
 import OurStoryContent from "../components/OurStoryContent";
 import JoinUs from "../components/JoinUs";
 
-function Ourstory() {
+function OurStory() {
   return (
     <>
       <OurStoryHero />
@@ -13,4 +13,4 @@ function Ourstory() {
   );
 }
 
-export default Ourstory;
+export default OurStory;
