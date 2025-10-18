@@ -1,11 +1,11 @@
 import React from "react";
-import Herobg from "/bg-img.png"; // Ensure you have the image in the specified path
 
 function Hero() {
   return (
     <section
       id="home"
-      className="relative bg-fixed bg-center h-screen flex items-center mb-20 bg-[url(./bg-img.png)] background-cover bg-no-repeat"
+      className="relative bg-fixed bg-center h-screen flex items-center mb-20 background-cover bg-no-repeat"
+      style={{ backgroundImage: "url('/bg-img.png')" }}
     >
       {/* Hero Content */}
       <div className="items-center justify-center text-center pt-20 md:pt-50 h-screen w-full">
