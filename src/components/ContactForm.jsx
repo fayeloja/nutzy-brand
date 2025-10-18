@@ -98,7 +98,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex text-center justify-center items-center mx-auto px-24 mb-20 text-primary">
+    <div className="flex text-center justify-center items-center mx-auto md:px-24 mb-20 text-primary">
       <form
         onSubmit={handleSubmit}
         className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow"

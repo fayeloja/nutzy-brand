@@ -7,7 +7,7 @@ function Products() {
   return (
     <>
       <ProductHero />
-      <div className="container mx-auto px-20">
+      <div className="container mx-auto md:px-20">
         <ProductContent />
       </div>
     </>

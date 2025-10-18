@@ -23,7 +23,7 @@ function ProductDetails() {
 
   return (
     <>
-      <div className="max-w-6xl mx-auto px-6 py-20 mt-40">
+      <div className="max-w-6xl mx-auto px-6 md:py-20 md:mt-40">
         {/* Top section: product image + info */}
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="flex justify-center">

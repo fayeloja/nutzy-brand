@@ -1,93 +1,94 @@
 // src/components/Navbar.jsx
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // for hamburger menu icons
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <div className="shadow-md fixed w-full z-50 bg-white/10 backdrop-blur-md">
-      {/* Navigation Bar */}
-      <nav className=" mx-auto flex justify-between justify-items-center">
-        {/* Logo */}
-        <div className="flex justify-between items-center md:py-5 md:px-24 w-full">
-          <div>
-            <a href="/">
-              <img
-                src="/nutzy-logo.png"
-                alt="NUTZY brand Logo"
-                className="h-12 w-auto shadow-2xl"
-              />
-            </a>
-          </div>
+  const toggleMenu = () => setIsOpen(!isOpen);
 
-          {/* Desktop Menu */}
-          <div className="hidden md:block">
-            <ul className="navbar-menu flex space-x-8 text-primary">
-              <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <Link to="/">HOME</Link>
-              </li>
-              <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <Link to="/products">PRODUCTS</Link>
-              </li>
-              <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <Link to="/ourstory">OUR STORY</Link>
-              </li>
-              <li className="hover:text-hover-accent-red focus:text-hover-accent-red">
-                <Link to="/contact">CONTACT</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+  return (
+    <header className="shadow-md fixed w-full z-50 bg-white/10 backdrop-blur-md">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-24">
+        {/* Logo */}
+        <Link to="/" className="flex items-center">
+          <img
+            src="/nutzy-logo.png"
+            alt="NUTZY brand Logo"
+            className="h-12 w-auto"
+          />
+        </Link>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-8 text-primary font-medium">
+          <li className="hover:text-hover-accent-red transition">
+            <Link to="/">HOME</Link>
+          </li>
+          <li className="hover:text-hover-accent-red transition">
+            <Link to="/products">PRODUCTS</Link>
+          </li>
+          <li className="hover:text-hover-accent-red transition">
+            <Link to="/ourstory">OUR STORY</Link>
+          </li>
+          <li className="hover:text-hover-accent-red transition">
+            <Link to="/contact">CONTACT</Link>
+          </li>
+        </ul>
+
         {/* Mobile Menu Button */}
         <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-700"
+          onClick={toggleMenu}
+          className="md:hidden text-primary focus:outline-none"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
-      {/* Mobile Menu */}
+
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md max-h-screen overflow-auto">
-          <ul className="navbar-menu flex flex-col space-y-4 p-4 text-primary">
+        <div className="md:hidden bg-white/95 backdrop-blur-lg shadow-lg">
+          <ul className="flex flex-col space-y-4 p-6 text-primary font-medium">
             <li>
-              <a
-                href="#home"
-                className="hover:text-hover-accent-red focus:text-hover-accent-red"
+              <Link
+                to="/"
+                onClick={toggleMenu}
+                className="hover:text-hover-accent-red transition"
               >
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#products"
-                className="hover:text-hover-accent-red focus:text-hover-accent-red"
+              <Link
+                to="/products"
+                onClick={toggleMenu}
+                className="hover:text-hover-accent-red transition"
               >
                 PRODUCTS
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#ourstory"
-                className="hover:text-hover-accent-red focus:text-hover-accent-red"
+              <Link
+                to="/ourstory"
+                onClick={toggleMenu}
+                className="hover:text-hover-accent-red transition"
               >
                 OUR STORY
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
-                className="hover:text-hover-accent-red focus:text-hover-accent-red"
+              <Link
+                to="/contact"
+                onClick={toggleMenu}
+                className="hover:text-hover-accent-red transition"
               >
                 CONTACT
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       )}
-    </div>
+    </header>
   );
 }
 

@@ -4,20 +4,21 @@ import SlantedPeanutPuffs from "../assets/product-photos/peanut-puff-slanted.png
 function OurStoryContent() {
   return (
     <>
-      <div className="mx-auto px-20 mb-40 mt-5">
-        <p className="paragraph text-center mx-auto mb-5 lazyload">
+      {/* INTRO SECTION */}
+      <div className="mx-auto px-5 md:px-20 mb-20 mt-5">
+        <p className="paragraph text-center mx-auto mb-5">
           A story of passion, quality and people at heart.
         </p>
-        <div className="flex justify-between text-center items-center mt-30 px-20">
-          <div className="justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-10 md:px-10">
+          <div className="w-full md:w-1/2 flex justify-center">
             <img
-              className="lazyload w-full max-h-max"
+              className="w-3/4 md:w-full"
               src={SlantedPeanutPuffs}
               alt="Nutzy Peanut Puff"
             />
           </div>
-          <div>
-            <p className="hero-subtitle text-justify mx-auto mb-5 lazyload p-20">
+          <div className="w-full md:w-1/2 mt-5 md:mt-0">
+            <p className="text-base md:text-lg text-justify p-5 md:p-10">
               At Nutzy, food is more than a product, it’s a way to connect,
               care, and nourish. From the very beginning, we set out with a
               simple mission: to nourish lives with delicious peanut products
@@ -26,129 +27,102 @@ function OurStoryContent() {
           </div>
         </div>
       </div>
-      <div className="w-full justify-center items-center">
-        <h1 className="mb-30 text-accent-red text-center justify-center">
+
+      {/* WHO WE ARE */}
+      <div className="w-full">
+        <h1 className="text-accent-red text-center mb-10 text-2xl md:text-7xl">
           WHO WE ARE
         </h1>
-        <div className="flex">
-          <div className="w-1/2 flex justify-center items-center left-0">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2">
             <img
-              className="lazyload w-full max-h-max"
+              className="w-full"
               src="./imgs/peanut-butter-served.png"
               alt="Peanut Butter Served"
             />
           </div>
-          <div className="bg-primary flex justify-center items-center w-1/2 right-0">
-            <p className="paragraph text-white text-center mx-auto mb-5 lazyload p-20">
+          <div className="bg-primary w-full md:w-1/2 flex items-center">
+            <p className="paragraph text-white text-center mx-auto p-5 md:p-10">
               At Nutzy, we believe food should be simple, nourishing, and full
               of joy…
             </p>
           </div>
         </div>
       </div>
-      <div className="w-full justify-center items-center">
-        <h1 className="mt-30 text-accent-red text-center justify-center">
+
+      {/* MISSION & VALUES */}
+      <div className="w-full text-center my-20">
+        <h1 className="text-accent-red mb-5 text-2xl md:text-7xl">
           OUR MISSION & VALUES
         </h1>
-
-        <p className="paragraph text-center mx-auto mb-5 lazyload p-20">
+        <p className="paragraph px-5 md:px-20">
           At Nutzy, our mission is clear: to nourish lives with delicious peanut
           products.
         </p>
       </div>
-      <div className="grid grid-cols-2 justify-center text-center items-center mx-30 gap-10 mb-40 md:px-50">
-        <div className="bg-linear-to-r from-accent-red to-red-800  p-10 rounded-4xl hover:shadow-2xl transition-shadow duration-300">
-          <h3 className="mt-5 text-white text-4xl font-extrabold ">
-            NOURISHMENT
-          </h3>
-          <p className="paragraph-footer text-white text-center justify-center lazyload">
+
+      {/* VALUE CARDS */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:grid-cols-2 px-5 md:px-20 mb-20">
+        <div className="bg-gradient-to-r from-red-600 to-red-800 p-8 rounded-3xl shadow-md">
+          <h3 className="text-white text-2xl font-bold mb-2">NOURISHMENT</h3>
+          <p className="text-white">
             Bringing health and energy to every bite.
           </p>
         </div>
-        <div className="bg-linear-to-r from-yellow-300 to-yellow-700  p-10 rounded-4xl hover:shadow-2xl transition-shadow duration-300">
-          <h3 className="mt-5 text-white text-4xl font-extrabold ">
-            COMMUNITY
-          </h3>
-          <p className="paragraph-footer text-white text-center justify-center lazyload">
-            Supporting farmers and families.
-          </p>
+        <div className="bg-gradient-to-r from-yellow-500 to-yellow-700 p-8 rounded-3xl shadow-md">
+          <h3 className="text-white text-2xl font-bold mb-2">COMMUNITY</h3>
+          <p className="text-white">Supporting farmers and families.</p>
         </div>
-        <div className="bg-linear-to-r from-purple-400 to-purple-800  p-10 rounded-4xl hover:shadow-2xl transition-shadow duration-300">
-          <h3 className="mt-5 text-white text-4xl font-extrabold ">QUALITY</h3>
-          <p className="paragraph-footer text-white text-center justify-center lazyload">
-            Carefully crafted with love and care.
-          </p>
+        <div className="bg-gradient-to-r from-purple-500 to-purple-800 p-8 rounded-3xl shadow-md">
+          <h3 className="text-white text-2xl font-bold mb-2">QUALITY</h3>
+          <p className="text-white">Carefully crafted with love and care.</p>
         </div>
-        <div className="bg-linear-to-r from-orange-400 to-orange-800  p-10 rounded-4xl hover:shadow-2xl transition-shadow duration-300">
-          <h3 className="mt-5 text-white text-4xl font-extrabold ">
-            SUSTAINBABILITY
-          </h3>
-          <p className="paragraph-footer text-white text-center justify-center lazyload">
+        <div className="bg-gradient-to-r from-orange-500 to-orange-800 p-8 rounded-3xl shadow-md">
+          <h3 className="text-white text-2xl font-bold mb-2">SUSTAINABILITY</h3>
+          <p className="text-white">
             Growing with respect for people and our planet.
           </p>
         </div>
       </div>
-      <div id="ourstory" className="mb-20">
-        <div
-          className="h-150 w-full bg-fixed bg-center bg-cover lazyload mb-20 text-center justify-center bg-transparent"
-          style={{
-            backgroundImage: "url('imgs/groundnut-shell-bg.png')", // replace with your Nutzy image path
-          }}
-        ></div>
-        <p className="paragraph text-center items-center mx-auto mb-20 lazyload">
-          What started as a passion for wholesome peanuts has grown into a
-          movement.
-        </p>
-      </div>
-      <div className="w-full justify-center items-center">
-        <h1 className="mb-20 text-accent-red text-center justify-center">
+
+      {/* PHILOSOPHY */}
+      <div className="w-full text-center p-5">
+        <h1 className="text-accent-red mb-10 text-2xl md:text-7xl">
           OUR PHILOSOPHY
         </h1>
-
-        <div className="flex justify-center text-center gap-10 mb-40 md:px-50">
-          <div className="flex flex-col bg-linear-to-br from-hover-primary to-primary  p-10 px- rounded-4xl text-center justify-center items-center max-w-3/4">
-            <h3 className="mb-5 text-white text-2xl font-extrabold ">
-              QUALITY FIRST
-            </h3>
-            <img src="imgs/badge.png" alt="" />
-            <p className="paragraph-footer text-white text-center justify-center lazyload">
-              Only the best peanuts and natural ingredients.
-            </p>
-          </div>
-          <div className="flex flex-col bg-linear-to-br from-hover-primary to-primary  p-10 rounded-4xl text-center justify-center items-center max-w-3/4">
-            <h3 className="mb-5 text-white text-2xl font-extrabold ">
-              HEALTHY INDULGENCE
-            </h3>
-            <img src="imgs/running.png" alt="" />
-            <p className="paragraph-footer text-white text-center justify-center lazyload">
-              Snacks that taste great and fuel your day.
-            </p>
-          </div>
-          <div className="flex flex-col bg-linear-to-br from-hover-primary to-primary  p-10 rounded-4xl text-center justify-center items-center max-w-3/4">
-            <h3 className="mb-5 text-white text-2xl font-extrabold ">
-              PEOPLE AT HEART
-            </h3>
-            <img src="imgs/users.png" alt="" />
-            <p className="paragraph-footer text-white text-center justify-center lazyload">
-              Snacks that taste great and fuel your day.
-            </p>
-          </div>
+        <div className="flex flex-col md:flex-row justify-center gap-5 md:px-20 mb-20">
+          {[
+            { title: "QUALITY FIRST", img: "imgs/badge.png" },
+            { title: "HEALTHY INDULGENCE", img: "imgs/running.png" },
+            { title: "PEOPLE AT HEART", img: "imgs/users.png" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col bg-primary p-8 rounded-3xl text-white items-center"
+            >
+              <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+              <img src={item.img} alt={item.title} className="mb-3" />
+              <p>Snacks that taste great and fuel your day.</p>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="w-full justify-center items-center">
-        <h1 className="mb-30 text-accent-red text-center justify-center">
+
+      {/* PROMISE SECTION */}
+      <div className="w-full">
+        <h1 className="text-accent-red text-center mb-10 text-2xl md:text-7xl">
           OUR PROMISE
         </h1>
-        <div className="flex">
-          <div className="bg-primary flex justify-center items-center w-1/2 right-0">
-            <p className="paragraph text-white text-center mx-auto mb-5 lazyload p-20">
+        <div className="flex flex-col md:flex-row">
+          <div className="bg-primary w-full md:w-1/2 flex items-center">
+            <p className="paragraph text-white text-center p-5 md:p-10">
               We promise to keep bringing you snacks and spreads that fit
               seamlessly into your life.
             </p>
           </div>
-          <div className="w-1/2 flex justify-center items-center left-0">
+          <div className="w-full md:w-1/2">
             <img
-              className="lazyload w-full max-h-max"
+              className="w-full"
               src="./imgs/family-rush-pb-min.png"
               alt="Peanut Butter Served"
             />

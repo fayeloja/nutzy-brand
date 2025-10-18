@@ -2,32 +2,27 @@ function ProductHero() {
   return (
     <section
       id="ProductHero"
-      className="relative bg-fixed bg-center h-screen flex items-center lazyload mb-20"
-      style={{
-        backgroundImage: "url('./product-hero-bg.png')", // replace with your Nutzy image path
-      }}
+      className="relative flex items-center justify-center bg-center bg-cover mb-16 h-[70vh] md:h-screen"
     >
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/videos/nutzy-hero.mp4" // 👈 Place your video inside /public/videos/
+        src="/videos/nutzy-hero.mp4"
         autoPlay
         loop
         muted
         playsInline
       />
 
-      {/* Background Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Hero Content */}
-      <div className="items-center justify-center text-center pt-50 h-screen w-full relative z-10">
-        <div className="mb-10 w-full">
-          <h1 className="hero-title text-accent-red transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 ... ">
-            OUR PRODUCTS
-          </h1>
-        </div>
-        <p className="hero-subtitle text-white max-w-2xl mx-auto">
+      <div className="relative z-10 text-center px-6 md:px-12">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl text-accent-red font-extrabold leading-tight mb-4 transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
+          OUR PRODUCTS
+        </h1>
+        <p className="text-sm md:text-lg lg:text-xl text-white max-w-lg md:max-w-2xl mx-auto">
           Discover our range of tasty, nutritious snacks, made for moms, kids,
           and hustling youths.
         </p>

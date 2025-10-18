@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-primary text-white md:px-24 pt-20 mt-20">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between gap-10">
+    <footer className="bg-primary text-white px-6 md:px-24 pt-16 mt-20">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between gap-10 text-center md:text-left">
         {/* Logo & Contact */}
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <Link to="/">
             <img
               src="/nutzy-logo.png"
               alt="NUTZY brand Logo"
-              className="h-12 w-auto shadow-2xl mb-10"
+              className="h-12 w-auto shadow-2xl mb-8"
             />
           </Link>
 
@@ -24,7 +24,7 @@ function Footer() {
             <p className="mb-4">
               <a href="mailto:info@nutzy.ng" className="hover:underline">
                 info@nutzy.ng
-              </a>{" "}
+              </a>
               <br />
               <a href="mailto:sale@nutzy.ng" className="hover:underline">
                 sale@nutzy.ng
@@ -38,7 +38,7 @@ function Footer() {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap gap-10 md:gap-20 justify-between text-sm">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-20 justify-center md:justify-between text-sm">
           {/* MENU */}
           <div>
             <p className="font-semibold mb-4 text-lg">MENU</p>
@@ -141,7 +141,7 @@ function Footer() {
       </div>
 
       {/* Copyright */}
-      <div id="copyright" className="mt-20 mb-10 text-center md:text-left">
+      <div id="copyright" className="mt-16 mb-10 text-center">
         <p className="paragraph-footer text-sm">
           &copy; {new Date().getFullYear()} Ajrena Foods Ltd. All Rights
           Reserved.
