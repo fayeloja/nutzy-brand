@@ -18,7 +18,7 @@ function OurStoryContent() {
             />
           </div>
           <div className="w-full md:w-1/2 mt-5 md:mt-0">
-            <p className="text-base md:text-lg text-justify p-5 md:p-10">
+            <p className="text-base md:text-lg text-justify p-5 md:p-10 text-primary">
               At Nutzy, food is more than a product, it’s a way to connect,
               care, and nourish. From the very beginning, we set out with a
               simple mission: to nourish lives with delicious peanut products
