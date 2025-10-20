@@ -16,7 +16,7 @@ function Content() {
           />
         </div>
         <div>
-          <h1 className="mb-10 md:mb-30 text-accent-red text-2xl md:text-7xl font-bold">
+          <h1 className="mb-10 md:mb-30 text-accent-red text-3xl md:text-7xl font-bold">
             FOR MORNINGS THAT <br /> NEVER SLOW DOWN
           </h1>
         </div>
@@ -44,7 +44,7 @@ function Content() {
             backgroundImage: "url('/imgs/groundnut-bg.png')",
           }}
         >
-          <h1 className="text-accent-red text-2xl md:text-7xl font-bold">
+          <h1 className="text-accent-red text-3xl md:text-7xl font-bold">
             FUEL THE HUSTLE,
             <br /> CHASE THE VISION
           </h1>
@@ -67,7 +67,7 @@ function Content() {
 
       {/* Section 5 - Closing Tagline */}
       <div className="text-center px-6">
-        <h1 className="text-accent-red text-2xl md:text-7xl font-bold mb-6">
+        <h1 className="text-accent-red text-3xl md:text-7xl font-bold mb-6">
           DELICIOUS <br />
           NUTRITIOUS <br />
           ALWAYS WITHIN REACH

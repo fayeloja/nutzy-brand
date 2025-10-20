@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 function RecipesCarousel() {
   return (
     <div className="max-w-6xl mx-auto py-12 px-4">
-      <h1 className="text-center mb-20 text-accent-red">NUTZY RECIPES</h1>
+      <h1 className="text-center text-4xl md:text-7xl mb-5 md:mb-20 text-accent-red">
+        NUTZY RECIPES
+      </h1>
 
       <Swiper
         modules={[Autoplay, Pagination]}

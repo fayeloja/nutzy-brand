@@ -9,8 +9,8 @@ function NavBar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="shadow-md fixed w-full z-50 bg-white/10 backdrop-blur-md">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-24">
+    <header className="shadow-md fixed w-full z-50 bg-white/10 backdrop-blur-md px-4 md:px-24">
+      <nav className="container mx-auto flex items-center justify-between py-3">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img

@@ -8,7 +8,7 @@ function Hero() {
       style={{ backgroundImage: "url('/bg-img.png')" }}
     >
       {/* Hero Content */}
-      <div className="text-center items-center justify-center  pt-20 md:pt-60">
+      <div className="text-center items-center justify-center pt-20 md:pt-60">
         <div className="mb-10 w-full">
           <h1 className="hero-title text-primary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 ...">
             REAL NOURISHMENT, <br />{" "}

@@ -19,7 +19,7 @@ function ProductHero() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-6 md:px-12">
-        <h1 className="text-3xl md:text-6xl lg:text-7xl text-accent-red font-extrabold leading-tight mb-4 transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
+        <h1 className="text-3xl md:text-7xl text-accent-red font-extrabold leading-tight mb-4 transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
           OUR PRODUCTS
         </h1>
         <p className="text-sm md:text-lg lg:text-xl text-white max-w-lg md:max-w-2xl mx-auto">
