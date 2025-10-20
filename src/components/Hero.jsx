@@ -2,13 +2,13 @@ import React from "react";
 
 function Hero() {
   return (
-    <section
+    <div
       id="home"
-      className="relative bg-fixed bg-center h-screen flex items-center mb-20 background-cover bg-no-repeat"
+      className="bg-fixed h-screen mb-20 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/bg-img.png')" }}
     >
       {/* Hero Content */}
-      <div className="items-center justify-center text-center pt-20 md:pt-50 h-screen w-full">
+      <div className="text-center items-center justify-center  pt-20 md:pt-60">
         <div className="mb-10 w-full">
           <h1 className="hero-title text-primary transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 ...">
             REAL NOURISHMENT, <br />{" "}
@@ -19,7 +19,7 @@ function Hero() {
           FIND LOCATION <span></span>
         </button>
       </div>
-    </section>
+    </div>
   );
 }
 
