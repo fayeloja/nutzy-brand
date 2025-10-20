@@ -22,7 +22,7 @@ function OurStoryHero() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-5">
-        <h1 className="text-accent-red font-bold text-5xl md:text-7xl transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
+        <h1 className="text-accent-red font-bold text-5xl md:text-8xl transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
           OUR STORY
         </h1>
         <p className="text-white text-base sm:text-lg md:text-xl max-w-xl mx-auto mt-4">
