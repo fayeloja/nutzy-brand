@@ -1,5 +1,5 @@
 import React from "react";
-import SlantedPeanutPuffs from "../assets/product-photos/peanut-puff-slanted.png";
+import slantedPeanutPuffs from "../assets/product-photos/peanut-puff-slanted.png";
 
 function OurStoryContent() {
   return (
@@ -13,7 +13,7 @@ function OurStoryContent() {
           <div className="w-full md:w-1/2 flex justify-center">
             <img
               className="w-3/4 md:w-full"
-              src={SlantedPeanutPuffs}
+              src={slantedPeanutPuffs}
               alt="Nutzy Peanut Puff"
             />
           </div>

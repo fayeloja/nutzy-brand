@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { products } from "../data/products";
 import RecipesCarousel from "./RecipesCarousel";
-import CrunchyBig from "../assets/product-photos/crunchy-big-web.png";
+import crunchyBig from "../assets/product-photos/crunchy-big-web.png";
 
 function ProductContent() {
   // Split into two categories
@@ -102,7 +102,7 @@ function ProductContent() {
         <div className="flex justify-center">
           <img
             className="lazyload w-48 md:w-72 lg:w-auto"
-            src={CrunchyBig}
+            src={crunchyBig}
             alt="Crunchy Peanut Butter"
           />
         </div>
