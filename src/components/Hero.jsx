@@ -4,8 +4,8 @@ function Hero() {
   return (
     <div
       id="home"
-      className="bg-fixed h-screen mb-20 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/bg-img.png')" }}
+      className="bg-fixed h-screen mb-20 bg-cover bg-center bg-no-repeat"
     >
       {/* Hero Content */}
       <div className="text-center items-center justify-center pt-20 md:pt-60">
