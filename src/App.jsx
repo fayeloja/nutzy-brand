@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import ProductDetails from "./pages/ProductDetails";
 import RecipeDetails from "./pages/RecipeDetails";
 import Recipes from "./pages/Recipes";
+import DistributorLocation from "./pages/DistributorLocation";
 
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -36,6 +37,7 @@ function App() {
           <Route path="/recipes/:slug" element={<RecipeDetails />} />
           <Route path="/ourstory" element={<OurStory />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/distributor-location" element={<DistributorLocation />} />
         </Routes>
 
         {/* Show Reviews Carousel ONLY on Home */}

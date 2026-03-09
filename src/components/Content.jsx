@@ -4,9 +4,9 @@ function Content() {
   return (
     <>
       {/* Section 1 - Product Highlight */}
-      <div
+      <section
         className="container text-center mx-auto px-6 md:px-24 justify-center"
-        id="content"
+        id="product-highlight"
       >
         <div className="mb-10 md:my-30">
           <img
@@ -20,53 +20,60 @@ function Content() {
             FOR MORNINGS THAT <br /> NEVER SLOW DOWN
           </h1>
         </div>
-      </div>
+      </section>
 
       {/* Section 2 - Family Breakfast */}
-      <div id="ourstory" className="md:mb-20">
+      <section id="family-breakfast" className="md:mb-20">
         <div
-          className="w-full h-[60vh] md:h-screen bg-fixed bg-center bg-cover mb-10"
+          className="w-full h-[60svh] md:h-screen bg-center bg-cover bg-no-repeat mb-10 md:bg-fixed"
           style={{
             backgroundImage: "url('/imgs/family-break-fast.png')",
+            backgroundAttachment: "local", 
           }}
+          role="img"
+          aria-label="Family breakfast"
         ></div>
         <p className="paragraph text-center mx-auto px-6 max-w-xl">
           Nutzy gives moms and kids quick, tasty, and nourishing energy to power
           through the day.
         </p>
-      </div>
+      </section>
 
       {/* Section 3 - Hustle & Vision */}
-      <div className="container text-center mx-auto px-6 md:px-30" id="content">
+      <section className="container text-center mx-auto px-6 md:px-30" id="hustle-vision">
         <div
-          className="h-[40vh] md:h-80 bg-center bg-cover flex items-center justify-center"
+          className="h-[40svh] md:h-80 bg-cover bg-center bg-no-repeat flex items-center justify-center"
           style={{
             backgroundImage: "url('/imgs/groundnut-bg.png')",
           }}
+          role="img"
+          aria-label="Groundnut background"
         >
           <h1 className="text-accent-red text-3xl md:text-7xl font-bold">
             FUEL THE HUSTLE,
             <br /> CHASE THE VISION
           </h1>
         </div>
-      </div>
+      </section>
 
       {/* Section 4 - Naija Youth Hustle */}
-      <div id="ourstory" className="mb-20">
+      <section id="naija-youth-hustle" className="mb-20">
         <div
-          className="w-full h-[60vh] md:h-screen bg-fixed bg-center bg-cover mb-10"
+          className="w-full h-[60vh] md:h-screen bg-center bg-cover mb-10"
           style={{
             backgroundImage: "url('/imgs/naija-youth-hustle.png')",
           }}
+          role="img"
+          aria-label="Naija youth hustle"
         ></div>
         <p className="paragraph text-center mx-auto px-6 mb-10 max-w-xl">
           From study nights to big city dreams, Nutzy keeps you sharp, full, and
           moving.
         </p>
-      </div>
+      </section>
 
       {/* Section 5 - Closing Tagline */}
-      <div className="text-center px-6">
+      <section className="text-center px-6">
         <h1 className="text-accent-red text-3xl md:text-7xl font-bold mb-6">
           DELICIOUS <br />
           NUTRITIOUS <br />
@@ -75,7 +82,7 @@ function Content() {
         <p className="paragraph text-center mx-auto mb-20 max-w-xl">
           The perfect blend of taste, energy, nutrition, and convenience.
         </p>
-      </div>
+      </section>
     </>
   );
 }

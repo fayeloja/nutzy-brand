@@ -2,7 +2,7 @@ function OurStoryHero() {
   return (
     <section
       id="OurStoryHero"
-      className="relative bg-center h-[80vh] md:h-screen flex items-center justify-center mb-20"
+      className="relative bg-center h-[80svh] md:h-screen flex items-center justify-center mb-20"
       style={{
         backgroundImage: "url('./family-kitchen.png')",
       }}
@@ -15,6 +15,8 @@ function OurStoryHero() {
         loop
         muted
         playsInline
+        preload="auto"
+        poster="/farm-video.png"
       />
 
       {/* Overlay */}

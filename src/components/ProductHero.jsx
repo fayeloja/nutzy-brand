@@ -2,7 +2,7 @@ function ProductHero() {
   return (
     <section
       id="ProductHero"
-      className="relative flex items-center justify-center bg-center bg-cover mb-16 h-[70vh] md:h-screen"
+      className="relative flex items-center justify-center bg-center bg-cover mb-16 h-[70svh] md:h-screen"
     >
       {/* Background Video */}
       <video
@@ -12,6 +12,8 @@ function ProductHero() {
         loop
         muted
         playsInline
+        preload="auto"
+        poster="/recipe-hero-banner.jpg"
       />
 
       {/* Dark Overlay */}

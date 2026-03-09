@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <div
       id="home"
       style={{ backgroundImage: "url('/bg-img.png')" }}
-      className="bg-fixed h-screen mb-20 bg-cover bg-center bg-no-repeat"
+      className="h-screen mb-20 bg-cover bg-center bg-no-repeat"
     >
       {/* Hero Content */}
       <div className="text-center items-center justify-center pt-20 md:pt-60">
@@ -16,7 +17,7 @@ function Hero() {
           </h1>
         </div>
         <button className="button-hero-cta mt-5 md:mb-5 shadow-2xl animate-bounce ...">
-          FIND LOCATION <span></span>
+          <Link to="/distributor-location">FIND LOCATION</Link> <span></span>
         </button>
       </div>
     </div>
