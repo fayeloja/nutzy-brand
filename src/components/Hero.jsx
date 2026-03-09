@@ -16,8 +16,8 @@ function Hero() {
             <span className="text-accent-red">ZERO FUSS!</span>
           </h1>
         </div>
-        <button className="button-hero-cta mt-5 md:mb-5 shadow-2xl animate-bounce ...">
-          <Link to="/distributor-location">FIND LOCATION</Link> <span></span>
+        <button className="button-hero-cta mt-5 md:mb-5 shadow-2xl hover:scale-110 transition delay-150 duration-500 ease-in-out ...">
+          <Link to="/products">OUR PRODUCTS </Link> <span>↓</span>
         </button>
       </div>
     </div>
